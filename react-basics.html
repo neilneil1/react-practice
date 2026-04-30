@@ -6,15 +6,29 @@
   <body>
     <div class="js-container"></div>
 
-    <script src="react-basics.js"></script>
+    <script>
+      console.log('hello');
+    </script>
+
+    <script src="https://unpkg.com/supersimpledev@8.6.4/external-library.js"></script>
 
     <script src="https://unpkg.com/supersimpledev/react.js"></script>
     <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
+      const button = <button>henlooo</button>;
+      const paragraph = <p>parapgadsa sa taxt</p>;
+
+      const div = (
+        <div>
+          <button>henlooo</button>
+          <p>parapgadsa sa taxt {2 + 2}</p>
+        </div>
+      );
+
       const container = document.querySelector('.js-container');
-      ReactDOM.createRoot(container).render('Welcome to SuperSimpleDev React Course');
+      ReactDOM.createRoot(container).render(div);
     </script>
   </body>
-</html>
+</html> 
