@@ -1,4 +1,6 @@
+import { Link } from 'react-router';
 import { Header } from '../components/Header';
+import BuyAgainIcon from '../assets/images/icons/buy-again.png';
 import './OrdersPage.css'
 
 export function OrdersPage() {
@@ -7,6 +9,8 @@ export function OrdersPage() {
             <title>Orders</title>
 
             <Header />
+
+            <Link rel="icon" type="image/svg+xml" to="/orders-favicon.png" />
 
             <div className="orders-page">
                 <div className="page-title">Your Orders</div>
@@ -48,17 +52,17 @@ export function OrdersPage() {
                                     Quantity: 1
                                 </div>
                                 <button className="buy-again-button button-primary">
-                                    <img className="buy-again-icon" src="images/icons/buy-again.png" />
+                                    <img className="buy-again-icon" src={BuyAgainIcon} />
                                     <span className="buy-again-message">Add to Cart</span>
                                 </button>
                             </div>
 
                             <div className="product-actions">
-                                <a href="/tracking">
+                                <Link to="/tracking">
                                     <button className="track-package-button button-secondary">
                                         Track package
                                     </button>
-                                </a>
+                                </Link>
                             </div>
 
                             <div className="product-image-container">
@@ -76,17 +80,17 @@ export function OrdersPage() {
                                     Quantity: 2
                                 </div>
                                 <button className="buy-again-button button-primary">
-                                    <img className="buy-again-icon" src="images/icons/buy-again.png" />
+                                    <img className="buy-again-icon" src={BuyAgainIcon} />
                                     <span className="buy-again-message">Add to Cart</span>
                                 </button>
                             </div>
 
                             <div className="product-actions">
-                                <a href="/tracking">
+                                <Link to="/tracking">
                                     <button className="track-package-button button-secondary">
                                         Track package
                                     </button>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -123,21 +127,21 @@ export function OrdersPage() {
                                 <div className="product-delivery-date">
                                     Arriving on: June 17
                                 </div>
-                                <div className="product-quantity">
+                                <div className="product-quantity">  
                                     Quantity: 2
                                 </div>
                                 <button className="buy-again-button button-primary">
-                                    <img className="buy-again-icon" src="images/icons/buy-again.png" />
+                                    <img className="buy-again-icon" src={BuyAgainIcon} />
                                     <span className="buy-again-message">Add to Cart</span>
                                 </button>
                             </div>
 
                             <div className="product-actions">
-                                <a href="/tracking">
+                                <Link to="/tracking">
                                     <button className="track-package-button button-secondary">
                                         Track package
                                     </button>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
