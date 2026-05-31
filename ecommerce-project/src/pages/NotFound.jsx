@@ -1,26 +1,16 @@
 import { Header } from "../components/Header";
+import './NotFound.css';
 
-export function NotFound() {
+export function NotFound({ cart }) {
     return (
         <>
-            <Header />
+            <Header cart={cart} />
 
             <title>Error Not Found</title>
-            <div
-                style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    height: '100vh'
-                }}
-            >
-                <p
-                    style={{
-                        fontSize: '50px'
-                    }}
-                >
-                    Page Not Found
-                </p>
+            <link rel="icon" type="image/svg+xml" href="home-favicon.png" />
+
+            <div className="not-found-message">
+                Page not found
             </div>
         </>
     );
